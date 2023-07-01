@@ -6,7 +6,7 @@
         <h1>Seguro que quieres borrar?</h1>
         <h2>Confirmar borrado</h2>
         <p>Seguro que quieres borrar"{{ object.title }}"?</p>
-        <p><button type="submit" value="Confirm">Yes, delete</button></p>
-        <p><button type="submit"><a href="{% url 'post_detail_view' object.pk %}">Cancel</a></button></p>
+        <p><button type="submit" value="Confirm">Si, Borra</button></p>
+        <p><button type="submit"><a href="{% url 'post_detail_view' object.pk %}">Cancelar</a></button></p>
     </form>
 {% endblock content %}
