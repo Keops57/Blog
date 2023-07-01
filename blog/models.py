@@ -11,7 +11,7 @@ class Post(models.Model):
         on_delete=models.CASCADE, # on delete: si se elimina el author, se borra todo lo queéste incluyó
     )
     def __str__(self): # devuelve el nombre del post que colocamos
-          return self.title
+        return self.title
     
     def get_absolute_url(self):
-        return reverse("post_detail", kwargs={"pk": self.pk}) # entre llaves = diccionario python /post_detal ya que la app se llama post
+        return reverse("post_detail_view", kwargs={"pk": self.pk}) # entre llaves = diccionario python /post_detal ya que la app se llama post

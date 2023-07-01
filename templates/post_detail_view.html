@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {{ post.title }}
-    {{ post.body }}
+    <div>
+        {{ post.title }}
+        {{ post.body }}
+    </div>
+
+    <p>
+        <a href="{% url 'post_update' post.pk %}">Update post</a>
+    </p>
 {% endblock content %}
