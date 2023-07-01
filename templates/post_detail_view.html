@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <hr>
+
     <div>
-        {{ post.title }}
-        {{ post.body }}
+        <p><h3>{{ post.title }}</h3></p>
+        <p>{{ post.body }}</p>
     </div>
 
+    <hr>
+
     <p>
-        <a href="{% url 'post_update' post.pk %}">Update post</a>
+        <button type="submit"><a href="{% url 'post_update' post.pk %}">Update post</a></button>
+    </p>
+    <p>
+        <button type="submit"><a href="{% url 'post_delete' post.pk %}">Delete post</a></button>
     </p>
 {% endblock content %}

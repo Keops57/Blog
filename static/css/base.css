@@ -3,6 +3,10 @@
 }
 
 header h1 a {
-    color: rgb(225, 35, 35);
+    color: rgb(9, 175, 0);
+}
+
+p button a{
+    text-decoration: none;
 }
 
